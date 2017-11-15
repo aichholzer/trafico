@@ -1,0 +1,51 @@
+{
+  "name": "trafico",
+  "version": "0.1.0",
+  "description": "The most awesome router for Express.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aichholzer/trafico.git"
+  },
+  "keywords": [
+    "express",
+    "routes",
+    "router",
+    "traffic"
+  ],
+  "author": {
+    "name": "Stefan Aichholzer",
+    "email": "play@analogbird.com",
+    "url": "https://github.com/aichholzer"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "istanbul cover _mocha -- -R spec",
+    "report": "codecov && codeclimate-test-reporter < ./coverage/lcov.info && cat ./coverage/lcov.info | coveralls"
+  },
+  "engines": {
+    "node": ">=6.11.5"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aichholzer/trafico/issues"
+  },
+  "homepage": "https://github.com/aichholzer/trafico#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "codeclimate-test-reporter": "^0.5.0",
+    "codecov": "^3.0.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "express": "^4.16.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "sinon": "^4.1.2"
+  }
+}
