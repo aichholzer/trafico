@@ -1,6 +1,6 @@
 {
   "name": "trafico",
-  "version": "0.1.6",
+  "version": "1.0.1",
   "description": "The most awesome router for Express.",
   "main": "lib/index.js",
   "repository": {
@@ -27,25 +27,24 @@
     "report": "codecov && codeclimate-test-reporter < ./coverage/lcov.info && cat ./coverage/lcov.info | coveralls"
   },
   "engines": {
-    "node": ">=6.11.5"
+    "node": ">=6.13"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aichholzer/trafico/issues"
   },
   "homepage": "https://github.com/aichholzer/trafico#readme",
-  "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
     "codeclimate-test-reporter": "^0.5.0",
     "codecov": "^3.0.0",
     "coveralls": "^3.0.0",
-    "eslint": "^4.13.1",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-import": "^2.9.0",
     "express": "^4.16.2",
     "istanbul": "^0.4.5",
-    "mocha": "^4.0.1",
-    "sinon": "^4.1.3"
+    "mocha": "^5.0.4",
+    "sinon": "^4.4.2"
   }
 }
