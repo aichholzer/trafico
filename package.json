@@ -1,6 +1,6 @@
 {
   "name": "trafico",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "The most awesome router for Express.",
   "main": "lib/index.js",
   "repository": {
