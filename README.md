@@ -2,7 +2,6 @@
   <img src="https://raw.githubusercontent.com/aichholzer/trafico/master/assets/cover.png" alt="Tráfico" />
 </p>
 
-# Tráfico
 [![npm version](https://badge.fury.io/js/trafico.svg)](https://badge.fury.io/js/trafico)
 [![Downloads](https://img.shields.io/npm/dt/trafico.svg)](https://www.npmjs.com/package/trafico)
 [![Build Status](https://travis-ci.org/aichholzer/trafico.svg?branch=master)](https://travis-ci.org/aichholzer/trafico)
