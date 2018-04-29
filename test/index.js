@@ -2,6 +2,7 @@ const Trafico = require('../lib');
 const express = require('express');
 const chai = require('chai');
 const sinon = require('sinon');
+
 const { expect } = chai;
 
 let sandbox;
@@ -21,7 +22,9 @@ describe('➔ Trafico', () => {
     } catch (error) {
       expect(error).to.be.an('error');
       expect(error.message).to.be.a('string');
-      expect(error.message).to.equal('Trafico requires Express; Cannot read property \'Router\' of undefined');
+      expect(error.message).to.equal(
+        "Trafico requires Express; Cannot read property 'Router' of undefined"
+      );
     }
 
     done();
@@ -67,10 +70,7 @@ describe('➔ Trafico', () => {
       controllers: `${__dirname}/controllers`
     });
     expect(traffic).to.be.an('object');
-    traffic.patch([
-      { use: (req, res, next) => next() },
-      { render: (req, res, next) => next() }
-    ]);
+    traffic.patch([{ use: (req, res, next) => next() }, { render: (req, res, next) => next() }]);
 
     done();
   });
@@ -85,9 +85,7 @@ describe('➔ Trafico', () => {
 
     try {
       traffic.route();
-      traffic.patch([
-        { use: (req, res, next) => next() }
-      ]);
+      traffic.patch([{ use: (req, res, next) => next() }]);
     } catch (error) {
       expect(error).to.be.an('error');
       expect(error.message).to.be.a('string');
@@ -121,7 +119,9 @@ describe('➔ Trafico', () => {
     traffic.on('error', (error) => {
       expect(error).to.be.an('error');
       expect(error.message).to.be.a('string');
-      expect(error.message).to.equal('A function with at least two parameters (req, res) is expected.');
+      expect(error.message).to.equal(
+        'A function with at least two parameters (req, res) is expected.'
+      );
       expect(traffic.notFound).to.be.a('function');
 
       done();
@@ -141,14 +141,16 @@ describe('➔ Trafico', () => {
     traffic.on('error', (error) => {
       expect(error).to.be.an('error');
       expect(error.message).to.be.a('string');
-      expect(error.message).to.equal('A function with at least two parameters (req, res) is expected.');
+      expect(error.message).to.equal(
+        'A function with at least two parameters (req, res) is expected.'
+      );
       expect(traffic.notFound).to.be.a('function');
 
       done();
     });
 
     expect(traffic).to.be.an('object');
-    traffic.notFound = req => req.params;
+    traffic.notFound = (req) => req.params;
   });
 
   it('Set valid notFound function in the proxy', (done) => {
