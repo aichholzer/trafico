@@ -3,7 +3,6 @@ coverage/
 test/
 
 .idea
-.codeclimate.yml
 .editorconfig
 .eslintignore
 .eslintrc.json
