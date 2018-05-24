@@ -8,7 +8,7 @@ const { expect } = chai;
 let sandbox;
 describe('➔ Trafico', () => {
   beforeEach(() => {
-    sandbox = sinon.sandbox.create();
+    sandbox = sinon.createSandbox();
   });
 
   afterEach(() => {
