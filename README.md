@@ -7,11 +7,10 @@
 [![Build Status](https://travis-ci.org/aichholzer/trafico.svg?branch=master)](https://travis-ci.org/aichholzer/trafico)
 [![Coverage Status](https://coveralls.io/repos/github/aichholzer/trafico/badge.svg?branch=master)](https://coveralls.io/github/aichholzer/trafico?branch=master)
 [![codebeat badge](https://codebeat.co/badges/05bcb301-f614-4c2c-892a-557253770e85)](https://codebeat.co/projects/github-com-aichholzer-trafico-master)
-[![Dependency Status](https://gemnasium.com/badges/github.com/aichholzer/trafico.svg)](https://gemnasium.com/github.com/aichholzer/trafico)
+[![Greenkeeper badge](https://badges.greenkeeper.io/aichholzer/trafico.svg)](https://greenkeeper.io/)
 
 ##### 🚥 Awesome -zero dependency- router for Express.
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/aichholzer/trafico.svg)](https://greenkeeper.io/)
 
 `Tráfico` will map routes to controllers and enable them in your Express application, so you don't have to do it manually and for each one. This provides an easier abstraction and enables a _drop-in-and-use_ route/controller setup.
 
