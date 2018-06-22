@@ -1,6 +1,6 @@
 {
   "name": "trafico",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "The most awesome router for Express.",
   "main": "lib/index.js",
   "repository": {
@@ -40,7 +40,7 @@
     "codecov": "^3.0.1",
     "coveralls": "^3.0.0",
     "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-airbnb-base": "^13.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-prettier": "^2.6.0",
