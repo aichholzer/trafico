@@ -1,9 +1,11 @@
+.idea
 assets/
 coverage/
 test/
-
-.idea
 .editorconfig
 .eslintignore
 .eslintrc.json
+.gitignore
+.prettierrc.json
 .travis.yml
+.package.json

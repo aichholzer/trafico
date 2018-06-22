@@ -1,7 +1,7 @@
-const Trafico = require('../lib');
 const express = require('express');
 const chai = require('chai');
 const sinon = require('sinon');
+const Trafico = require('../lib');
 
 const { expect } = chai;
 
